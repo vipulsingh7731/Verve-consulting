@@ -29,7 +29,10 @@ def get_all_hrefs(list_of_page_number_on_website, sleep_time=10):
         # execute script to scroll down the page( copy from internet )
         browser.execute_script("window.scrollTo(0, document.body.scrollHeight);var lenOfPage=document.body.scrollHeight;return lenOfPage;")
         # sleep for time
-        time.sleep(sleep_time)
+        if number == list_of_page_number_on_website[0]:
+            time.sleep(20)
+        else:
+            time.sleep(sleep_time)
         page_source = browser.page_source
         soup = BeautifulSoup(page_source, 'lxml')
         a_tags = soup.find_all(name="a")
