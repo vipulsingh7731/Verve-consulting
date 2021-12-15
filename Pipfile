@@ -13,6 +13,10 @@ spacy = "*"
 chardet = "*"
 PyPDF2 = "*"
 JPype1 = "*"
+requests-html = "*"
+nest-asyncio = "*"
+selenium = "*"
+pandas = "*"
 
 [dev-packages]
 
