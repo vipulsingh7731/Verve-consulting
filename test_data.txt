@@ -1,0 +1,58 @@
+Starbucks, which has invested more than $100 million in various efforts over the past few years to reduce the environmental footprint of its supply chains, is just one of a growing number of global food companies that are stepping up their efforts to reduce emissions by utilizing feed additives—namely Agolin, Bovaer, or seaweed.
+
+“We set our 2030 goals based on an assessment of our environmental impact across our global operations and supply chain, which provided a clear starting point and a guide for where to go,” Bengston said. “It also became clear that in order to reach resource-positive goals and protect our planet, we must innovate and collaborate.”
+
+At the COP26 climate summit in November, JBS, the world’s largest meatpacking company, announced it will begin giving Bovaer, made with a compound called 3-NOP, to cattle in its home market, Brazil, as part of its broader efforts to reduce greenhouse gases across its supply chains. Nestlé joined forces with one of its suppliers, Barry Callebaut, in 2019 to work on integrating Agolin into its dairy supply chain as part of its effort to reach net zero by 2050. 
+
+
+“We see it as an opportunity to really create the movement for sustainable supply chains.”  said Kevin Ogorzalek, senior manager of sustainability sourcing for the Americas at Barry Callebaut, the world’s largest chocolate manufacturer.
+
+Never miss a story about climate change
+FOLLOW
+MORE TOPICS:
+CRYPTOCURRENCY
+CAREERS
+SUPPLY CHAINS
+VIEW MORE
+While several companies in the private sector are mobilizing, governments are just beginning to regulate methane emissions from oil and gas, after decades of focusing almost exclusively on carbon dioxide—leaving the agriculture sector largely behind.
+
+Global Methane Pledge
+At COP26, 110 world leaders signed the Global Methane Pledge, promising to slash methane emissions by 30% by 2030. The pledge focused primarily on regulating methane leaks from oil and gas production. While many environmental groups called out the fact that emissions reductions from agriculture will be critical to hitting the overall goal, it remains to be seen whether or not they will direct that attention toward agriculture.
+
+“As the largest driver of both methane from human activity and deforestation, the ambitions set at COP26 handed a big slice of responsibility to the food and agriculture sector. We cannot deliver the COP26 commitments without addressing the protein supply chain,” said Jeremy Coller, the chair and founder of FAIRR, an investor network that evaluates ESG risks related to protein supply chains. FAIRR’s latest sustainability assessment of large meat companies found only 18% of global meat and dairy producers are tracking methane emissions, and lack of action on climate change will affect those companies’ bottom lines.
+
+Methane is about 28 times more powerful than carbon dioxide at warming the planet over a 100-year period, and cuts in emissions will be felt sooner than reductions in carbon dioxide emissions. The fossil fuel industry is responsible for 40% of global methane emissions via oil and gas extraction and coal mining. Waste, such as emissions from landfills, accounts for 20%. And emissions from dairy and beef cattle account for more than 30%, a significant slice of the pie.
+
+
+When fed to cows, these new additives make the animals less gassy. That matters because dairy cows produce methane by burping via a process called enteric fermentation, and various reports in 2021 concluded that reaching climate goals like staying below the 1.5°C target won’t be possible without significant reductions in methane emissions.
+
+In the U.S, the Biden administration’s White House Methane Emissions Reduction Plan, released in November, in conjunction with the Global Methane Pledge, steered clear of regulating emissions from agriculture in favor of incentivizing practices that lead to reductions. 
+
+It included plans to fund on-farm methane-reducing practices and specifically to increase investment in research on feed additives. And in an interview from COP26, Secretary of Agriculture Tom Vilsack told the Guardian that he thought emissions from meat production could be reduced by changing practices; he specifically mentioned “food additives” as one strategy. Vilsack’s AIM for Climate initiative launched at COP26 already invested $5 million in the Greener Cattle Initiative, a research project with “feed additives and supplements that inhibit enteric methane emissions” as one of its primary focus areas.
+
+New incentives
+Signals that governments might provide economic incentives made a market that was already revving up look even more attractive, said Tom Shields, an investment partner at AgFunder, a venture capital firm dedicated to sustainable agriculture technology and innovation. Carbon markets that could financially reward farmers who reduce greenhouse gas emissions are also popular in current policy conversations and look promising for feed additives, he said. And when you consider the fact that there are about 1.5 billion cattle on the planet, the possibilities are massive.
+
+“Frankly it feels like a place where it's possible to make a big impact relatively quickly,” said Shields, who led an AgFunder investment in CH4 Global, a company making feed additives from seaweed that raised $13 million in Series A funding in October. “It's not something that's going to take 10 or 15 or 20 years to do.”
+
+Emerging solutions
+Still, the science on how effective feed additives are and how they compare is still emerging, and major hurdles related to production and regulatory frameworks remain. At the same time, New Zealand researchers are working on developing vaccines that can prevent methane production from cattle, which could be crucial for cows on pasture. In Australia, they’re looking at viruses that target and destroy methane-producing bacteria. Some environmental advocates also say that technologies like feed additives distract from the fact that reducing beef and dairy consumption in high-income countries would reduce emissions more dramatically on several fronts, including on factors like land use and feed production, and come with other benefits.
+
+
+“[Feed additives] are important tools in our toolbox but they will not be the only ones,” said Frank Mitloehner, a scientist at the UC Davis Department of Animal Science who is at the forefront of research on reducing methane emissions from livestock.
+
+Right now, Agolin is ahead of Bovaer and seaweed in the marketplace in many ways, he said. It’s the first feed additive that’s widely available, and an estimated 1.3 million cows in Europe and the United States now ingest it alongside their silage. An on-farm study Mitloehner published in December 2020 found giving the supplement to dairy cows reduced the intensity of methane emissions by about 11%, and other studies have shown similar or better reductions. Mitloehner said his study was the most controlled to date, and as a result, he felt confident the results could be consistently replicated. And not only is Agolin currently available to farmers, it’s cheap—about 3 to 5 cents per cow per day—and has been shown to significantly increase feed efficiency, therefore boosting farmers’ bottom lines. Unlike seaweed, it’s also simple to produce. “The bottom line is that Agolin is the here and now,” said Ogorzalek. “It's easy, it's low-cost, and importantly, we've proven that on a commercial level, it makes farmers more money.”
+
+Others in the industry are choosing to direct their dollars toward feed supplements that could cut methane in beef and dairy cattle at much higher rates compared to Agolin. There are dozens of peer-reviewed publications that back up the fact that Bovaer could reduce enteric methane between 30% and 90%. “The stuff works, we know it works, and if you wanted to produce it in mass, you could,” Mitloehner said. 
+
+The reductions are significant and consistent enough that in a recent report on transitioning Denmark to carbon-neutral agriculture, World Resources Institute researchers recommended dairy producers immediately test large-scale implementation as soon as Bovaer is approved  So far, Bovaer has been approved for use only in Brazil and Chile, but regulators in the European Union moved it one step closer to approval in mid-November. In the U.S., the Food and Drug Administration evaluation process is notoriously slow, and the company that makes it worries it could be years before it’s approved.
+
+And seaweed—specifically asparagopsis—is the feed additive that seems to inspire the most starry-eyed investors. In the U.S., in addition to CH4 Global’s progress, Blue Ocean Barns closed a new $5 million seed round of capital in June, and Bengston said Starbucks has also invested in the company.
+
+
+Mitloehner said it’s “far from being market-ready,” especially considering several unanswered questions. The biggest are around whether carcinogenic compounds found naturally in asparagopsis could make it into the milk or meat at concerning levels, whether cows will eat it at a rate that does not reduce feed efficiency too much, and how to grow and process the amount that would be necessary to make a difference at a large scale.
+
+Shields acknowledged those challenges but said that “those things are being worked on in parallel by a bunch of really smart people,” and the potential is so great, it’s worth reaching for. Lab studies have shown potential methane reductions of up to 99%, and recent trials have shown average emissions reductions of over 50%. 
+
+
+“We're investing in the solutions that are going to win overall in the marketplace over time,” he said, but he also didn’t think that meant Agolin and other faster-to-market additives didn’t have a role to play in the meantime. “It’s such a big problem that all of these solutions are needed.”

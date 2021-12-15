@@ -5,6 +5,16 @@ name = "pypi"
 
 [packages]
 beautifulsoup4 = "*"
+requests = "*"
+lxml = "*"
+html5lib = "*"
+google = "*"
+jupyterlab = "*"
+spacy = "*"
+chardet = "*"
+PyPDF2 = "*"
+JPype1 = "*"
+python-dateutil = "*"
 
 [dev-packages]
 
