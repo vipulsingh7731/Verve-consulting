@@ -1,4 +1,4 @@
-#Installation
+# Installation
 1. Install python
 2. Install required libraries
 > pip install beautifulsoup4
