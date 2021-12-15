@@ -7,3 +7,5 @@
 3. you'll need to install chromeWeb driver for your system
 > hopefully the one provided will work for you\
 > Then place the .exe in the same folder as .py script
+
+## Run only .py script, no need of .ipynb
