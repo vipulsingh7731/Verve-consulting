@@ -4,6 +4,7 @@
 > pip install requests\
 > pip install beautifulsoup4\
 > pip install pypdf2\
+> pip install lxml
 > pip install selenium
 4. you'll need to install chromeWeb driver for your version of chrome
 > hopefully the one provided will work for you\
