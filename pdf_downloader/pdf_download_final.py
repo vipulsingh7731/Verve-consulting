@@ -10,7 +10,7 @@ import random
 
 
 def get_html_source(url, sleep_time=10):
-    browser = webdriver.Chrome()
+    browser =  webdriver.Edge(r"msedgedriver.exe")
     # get web page
     browser.get(url)
     # execute script to scroll down the page
@@ -21,7 +21,7 @@ def get_html_source(url, sleep_time=10):
 
 # returns list of links of all pdf on a page
 def get_all_hrefs(list_of_page_number_on_website, sleep_time=10):
-    browser = webdriver.Chrome()
+    browser = webdriver.Edge(r"msedgedriver.exe")
     final_all_pdf_links = []
     for number in list_of_page_number_on_website:
         # get web page
@@ -30,7 +30,7 @@ def get_all_hrefs(list_of_page_number_on_website, sleep_time=10):
         browser.execute_script("window.scrollTo(0, document.body.scrollHeight);var lenOfPage=document.body.scrollHeight;return lenOfPage;")
         # sleep for time
         if number == list_of_page_number_on_website[0]:
-            time.sleep(20)
+            time.sleep(15)
         else:
             time.sleep(sleep_time)
         page_source = browser.page_source
@@ -49,8 +49,8 @@ def get_all_hrefs(list_of_page_number_on_website, sleep_time=10):
 def create_and_merge_pdfs(links_list, start_page, end_page):
     pdf_name_list = []
     initial_start_page = start_page
-    merger = PdfFileMerger()
     for a_page in links_list:
+        merger = PdfFileMerger()
         for index_link, a_link in enumerate(a_page):
             content = requests.get(a_link).content
             with open(f"pdf_downloader_folder/{start_page}_{index_link}.pdf", 'wb') as my_data:
@@ -64,13 +64,14 @@ def create_and_merge_pdfs(links_list, start_page, end_page):
                 print(f"------------{start_page}_{index_link}.pdf was not merged due to some reason!!!")
                 print("Visit the folling link for it:")
                 print(f"Link--- {a_link}")
-        time.sleep(random.random()*3)
-        # Forcing correct name of pdf according to the start_page and end page 
+            time.sleep(random.random()*3)
+
+        merger.write(f"pdf_downloader_folder/Compiled_{start_page}_.pdf")
+        merger.close()
+    
         start_page += 1
 
     my_data.close()
-    merger.write(f"pdf_downloader_folder/Compiled_{initial_start_page}_{end_page}.pdf")
-    merger.close()
     for pdf in pdf_name_list:
         os.remove(pdf)
     print("Compiled PDF Created")
@@ -93,7 +94,7 @@ except FileExistsError:
   
 if mode == "w" :
     # ----- Writing to csv file
-    linksss = get_all_hrefs(mylist, sleep_time=10)
+    linksss = get_all_hrefs(mylist, sleep_time=7)
 
     # data to be written row-wise in csv fil
     data = linksss
@@ -119,3 +120,4 @@ elif mode == "r":
 
 
 create_and_merge_pdfs(links_list=linksss, start_page=start_page, end_page=end_page)
+os.system("PAUSE")
