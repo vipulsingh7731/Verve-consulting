@@ -17,6 +17,7 @@ requests-html = "*"
 nest-asyncio = "*"
 selenium = "*"
 pandas = "*"
+pikepdf = "*"
 
 [dev-packages]
 
