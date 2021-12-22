@@ -72,7 +72,6 @@ def create_and_merge_pdfs(links_list, start_page, end_page):
         pdf_.close()
         # merger.write(f"pdf_downloader_folder/Compiled_{start_page}_.pdf")
         # merger.close()
-    
         start_page += 1
 
     
