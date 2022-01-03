@@ -18,6 +18,7 @@ nest-asyncio = "*"
 selenium = "*"
 pandas = "*"
 pikepdf = "*"
+openpyxl = "*"
 
 [dev-packages]
 
