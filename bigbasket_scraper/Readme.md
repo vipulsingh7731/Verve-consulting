@@ -8,6 +8,6 @@
 > pip install openpyxl
 4. you'll need to install chromeWeb driver for your version of chrome
 > hopefully the one provided will work for you\
-> Then place the .exe in the same folder as .py script
+> To download just google search chromeweb driver for your version of chrome, then place the .exe in the same folder as .py script
 
 ## Run only .py script, no need of .ipynb
