@@ -125,6 +125,5 @@ elif mode == "r":
     linksss = data
 # --------
 
-
 create_and_merge_pdfs(links_list=linksss, start_page=start_page, end_page=end_page)
 os.system("PAUSE")
