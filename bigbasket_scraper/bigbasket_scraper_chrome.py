@@ -7,12 +7,12 @@ from datetime import date
 from selenium.webdriver.common.by import By
 from openpyxl import Workbook, load_workbook
 from datetime import date
-import os
+
 # Selenium Implementation
 
 def get_html_source(url):
     # time_wait = input("Enter time(in s) to wait for you to put in pincode: ")
-    browser = webdriver.Chrome(r"chromedriver.exe")
+    browser = webdriver.Chrome()
     # get web page
     browser.get(url)
     # execute script to scroll down the page
@@ -22,6 +22,7 @@ def get_html_source(url):
     show_more_button = browser.find_element(By.CSS_SELECTOR, 'button[ng-click="vm.pagginator.showmorepage()"]')
     # time.sleep(600)
     for i in range(0,200):
+        time.sleep(2)
         browser.execute_script("window.scrollTo(0, 8/9*document.body.scrollHeight);var lenOfPage=document.body.scrollHeight;return lenOfPage;")
         try:
             time.sleep(3)
@@ -38,6 +39,7 @@ product_list = soup.find_all(attrs={"qa": "product"})
 final_data = []
 pincode = soup.find_all("span", attrs={"ng-bind":"vm.user.currentAddress.address_display_name"})[0].text
 
+print(len(product_list), "no. of elements fetched")
 for product_div in product_list:
     product_name = product_div.find_next(attrs={"qa": "product_name"})
     product_name = product_name.find_next("a").text
@@ -49,7 +51,14 @@ for product_div in product_list:
         price = float(price)
     except :
         price = float(price.split(" ")[-1])
-        
+    if weight.split(" ")[-1].lower() == "g":
+        price = price/float(weight.split(" ")[-2])*1000
+        weight = "1 kg"
+    elif weight.split(" ")[-1].lower() == "kg":
+        price = price/float(weight.split(" ")[-2])
+        weight = "1 kg"
+    elif weight.split(" ")[-1].lower() == "combo":
+        continue
     final_data.append({
         "name": product_name,
         "weight":weight,
@@ -58,7 +67,7 @@ for product_div in product_list:
 print(len(final_data), "no. of elements stored")
 
 # Excel Code
-excel_filename= f"{pincode}_{date.today().strftime('%d-%m-%Y')}.xlsx"
+excel_filename= f"{pincode}.xlsx"
 
 try:
     wb = load_workbook(excel_filename)
@@ -67,16 +76,28 @@ except FileNotFoundError:
     wb.save(excel_filename)
 
 ws = wb.active
-ws.cell(row=1, column=3).value = date.today().strftime("%d/%m/%Y")
-ws.cell(row=2, column=2).value = "Price"
-ws.cell(row=2, column=3).value = "Weight/pc(s)"
+maxrow=ws.max_row+1
+pcol=dcol=ws.max_column+1
 
+wcol=pcol+1
+if dcol>2:
+    if ws.cell(row=1, column=dcol-2).value == date.today().strftime("%d/%m/%Y"):
+        pcol = pcol - 2
+        dcol = dcol - 2
+        wcol = wcol - 2
+ws.cell(row=1, column=dcol).value = date.today().strftime("%d/%m/%Y")
+ws.cell(row=2, column=pcol).value = "Price"
+ws.cell(row=2, column=wcol).value = "Weight/pc(s)"
 for index_1, dict in enumerate(final_data):
-    
-    ws.cell(row=3+index_1, column=1).value = dict["name"]
-    ws.cell(row=3+index_1, column=2).value = dict["price"]
-    ws.cell(row=3+index_1, column=3).value = dict["weight"]
-    
+    c=1
+    for i in range(maxrow-1):
+        if ws.cell(row=i+1, column=1).value == dict["name"]:
+            c=0
+            ws.cell(row=i+1, column=pcol).value = dict["price"]
+            ws.cell(row=i+1, column=wcol).value = dict["weight"]
+    if c==1:
+        ws.cell(row=ws.max_row+1, column=1).value = dict["name"]
+        ws.cell(row=ws.max_row, column=pcol).value = dict["price"]
+        ws.cell(row=ws.max_row, column=wcol).value = dict["weight"]
+        
 wb.save(excel_filename)
-print("Excel Created")
-os.system("PAUSE")
