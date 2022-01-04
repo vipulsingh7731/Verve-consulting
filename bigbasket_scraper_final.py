@@ -7,7 +7,7 @@ from datetime import date
 from selenium.webdriver.common.by import By
 from openpyxl import Workbook, load_workbook
 from datetime import date
-
+import os
 def get_soup_from_BeautifulSoup(url="https://www.google.com/search", params= None, *headers):
     response = requests.get(url, params=params, headers=headers )
     return BeautifulSoup(response.text, 'lxml')
@@ -81,3 +81,5 @@ for index_1, dict in enumerate(final_data):
     ws.cell(row=3+index_1, column=3).value = dict["weight"]
     
 wb.save(excel_filename)
+print("Excel Created")
+os.system("PAUSE")
