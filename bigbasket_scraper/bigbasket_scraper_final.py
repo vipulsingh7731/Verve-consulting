@@ -8,9 +8,6 @@ from selenium.webdriver.common.by import By
 from openpyxl import Workbook, load_workbook
 from datetime import date
 import os
-def get_soup_from_BeautifulSoup(url="https://www.google.com/search", params= None, *headers):
-    response = requests.get(url, params=params, headers=headers )
-    return BeautifulSoup(response.text, 'lxml')
 # Selenium Implementation
 
 def get_html_source(url):
