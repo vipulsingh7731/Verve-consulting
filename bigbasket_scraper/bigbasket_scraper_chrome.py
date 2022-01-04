@@ -12,7 +12,7 @@ import os
 
 def get_html_source(url):
     # time_wait = input("Enter time(in s) to wait for you to put in pincode: ")
-    browser = webdriver.Chrome()
+    browser = webdriver.Chrome(r"chromedriver.exe")
     # get web page
     browser.get(url)
     # execute script to scroll down the page
