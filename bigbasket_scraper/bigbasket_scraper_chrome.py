@@ -7,6 +7,7 @@ from datetime import date
 from selenium.webdriver.common.by import By
 from openpyxl import Workbook, load_workbook
 from datetime import date
+import os
 
 # Selenium Implementation
 
@@ -101,3 +102,4 @@ for index_1, dict in enumerate(final_data):
         ws.cell(row=ws.max_row, column=wcol).value = dict["weight"]
         
 wb.save(excel_filename)
+os.system("PAUSE")
